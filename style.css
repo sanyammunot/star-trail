@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* overflow: hiddens; */
+    background-color: black;
+    /* height: 100vh; */
+}
+
+span {
+    position: absolute;
+    background: url(star.png);
+    pointer-events: none;
+    animation: animate 2s linear infinite;
+    background-size: cover;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -200%);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
+    
+}
